@@ -12,9 +12,9 @@ get '/set_info' do
 end
 
 post '/stop_approaching' do
-  client = Twilio::REST::Client.new APP_CONFIG[:account_sid], APP_CONFIG[:auth_token]
+  client = Twilio::REST::Client.new ENV['TWILIOID'], ENV['TWILIOTOKEN']
   client.account.messages.create(
-    from: APP_CONFIG[:twilio_phone],
+    from: ENV['TWILIOPHONE'],
     to: "+"+session[:phone],
     body: "Your stop is coming up. Get ready!"
     )
