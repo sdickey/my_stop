@@ -45,6 +45,6 @@ Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }
 require APP_ROOT.join('config', 'database')
 
 # Hide API keys and auth tokens
-APP_CONFIG = {}
-secrets_config = YAML.load_file(APP_ROOT + 'config/config.yml')
-secrets_config["production"].each_pair{ |k,v| APP_CONFIG[k.to_sym] = v }
+# APP_CONFIG = {}
+# secrets_config = YAML.load_file(APP_ROOT + 'config/config.yml')
+# secrets_config["production"].each_pair{ |k,v| APP_CONFIG[k.to_sym] = v }
