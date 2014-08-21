@@ -1,0 +1,4 @@
+production:
+  account_sid: "AC4f90539f92bb3a0bbd80822e0d54a7dc"
+  auth_token: "b8a8e67f9f49e4465ddf1407acae23cd"
+  twilio_phone: "+14154948429"
